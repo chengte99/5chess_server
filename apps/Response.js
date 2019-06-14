@@ -1,0 +1,19 @@
+var Response = {
+    OK: 1,
+    INVAILD_PARAMS: -100,
+    SYS_ERROR: -101,
+    ILLEGAL_ACCOUNT: -102,
+
+    INVAILD_OPT: -103,
+    PHONE_IS_REGED: -104,
+    CODE_IS_INVAILD: -105,
+    UNAME_OR_UPWD_ERR: -106,
+    PHONE_IS_NO_REG: -107,
+    RANK_IS_EMPTY: -108,
+    ZONE_IS_INVAILD: -109,
+    CHIP_IS_NOT_ENOUGH: -110,
+    LEVEL_IS_NOT_ENOUGH: -111,
+    NOT_YOUR_TURN: -112,
+};
+
+module.exports = Response;
