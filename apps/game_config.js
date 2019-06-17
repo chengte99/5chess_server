@@ -6,6 +6,11 @@ var game_config = {
         ports: [6080, 6081],
     },
 
+    webserver_config:{
+        host: "127.0.0.1",
+        port: 10001,
+    },
+
     center_server: {
         host: "127.0.0.1",
         port: 6086,
