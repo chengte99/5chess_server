@@ -1,0 +1,1 @@
+node ./apps/webserver/hotupdate.js
