@@ -194,7 +194,7 @@ function start_tcp_server(ip, port, is_encrypt){
 
     server.listen({
         port: port,
-        host: ip,
+        // host: ip,
         exclusive: true,
     });
 }
@@ -235,7 +235,7 @@ function ws_add_client_session_event(session, is_encrypt) {
 function start_ws_server(ip, port, is_encrypt){
     log.info("start ws server...", ip, port);
     var server = new ws.Server({
-        host: ip,
+        // host: ip,
         port: port,
     });
 
