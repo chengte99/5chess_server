@@ -1,6 +1,7 @@
 var Stype = require("./Stype");
 var HOST_IP = "127.0.0.1";
-var CLOUDSQL_IP = "35.201.249.12";
+var GCP_CLOUDSQL_IP = "35.201.249.12";
+var GCP_REDIS_IP = "10.0.0.3";
 
 var game_config = {
     GATEWAY_CONNECT_IP: "34.80.200.168",
@@ -35,7 +36,7 @@ var game_config = {
     },
 
     center_database: {
-        host: CLOUDSQL_IP,
+        host: GCP_CLOUDSQL_IP,
         port: 3306,
         database: "bycw_center",
         user: "root",
@@ -43,7 +44,7 @@ var game_config = {
     },
 
     game_database: {
-        host: CLOUDSQL_IP,
+        host: GCP_CLOUDSQL_IP,
         port: 3306,
         database: "bycw_game_node",
         user: "root",
@@ -51,13 +52,13 @@ var game_config = {
     },
 
     center_redis: {
-        host: HOST_IP,
+        host: GCP_REDIS_IP,
         port: 6379,
         db_index: 0,
     },
 
     game_redis: {
-        host: HOST_IP,
+        host: GCP_REDIS_IP,
         port: 6379,
         db_index: 1,
     },
