@@ -32,7 +32,8 @@ console.log("webserver started at " + host + ":" + port);
 
 app.get("/server_info", function(request, response){
     var data = {
-        host: game_config.gateway_config.host,
+        host: game_config.GATEWAY_CONNECT_IP,
+        // host: game_config.gateway_config.host, // 本機端
         tcp_port: game_config.gateway_config.ports[0],
         ws_port: game_config.gateway_config.ports[1],
     }

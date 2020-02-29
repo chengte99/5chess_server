@@ -1,38 +1,39 @@
 var Stype = require("./Stype");
+var HOST_IP = "127.0.0.1";
 
 var game_config = {
-    GATEWAY_CONNECT_IP: "127.0.0.1",
+    GATEWAY_CONNECT_IP: "47.92.0.77",
 
     gateway_config:{
-        host: "127.0.0.1",
+        host: HOST_IP,
         ports: [6080, 6081],
     },
 
     webserver_config:{
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 10001,
     },
 
     center_server: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 6086,
         stypes: [Stype.Auth],
     },
 
     game_system_server: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 6087,
         stypes: [Stype.GameSystem],
     },
 
     five_chess_server: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 6088,
         stypes: [Stype.Game5Chess],
     },
 
     center_database: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 3306,
         database: "bycw_center",
         user: "root",
@@ -40,7 +41,7 @@ var game_config = {
     },
 
     game_database: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 3306,
         database: "bycw_game_node",
         user: "root",
@@ -48,13 +49,13 @@ var game_config = {
     },
 
     center_redis: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 6379,
         db_index: 0,
     },
 
     game_redis: {
-        host: "127.0.0.1",
+        host: HOST_IP,
         port: 6379,
         db_index: 1,
     },
@@ -63,22 +64,22 @@ var game_config = {
     gw_connect_servers:{
         // 0:{
         //     stype: Stype.TalkRoom,
-        //     host: "127.0.0.1",
+        //     host: HOST_IP,
         //     port: 6084
         // },
         1:{
             stype: Stype.Auth,
-            host: "127.0.0.1",
+            host: HOST_IP,
             port: 6086
         },
         2:{
             stype: Stype.GameSystem,
-            host: "127.0.0.1",
+            host: HOST_IP,
             port: 6087
         },
         3:{
             stype: Stype.Game5Chess,
-            host: "127.0.0.1",
+            host: HOST_IP,
             port: 6088
         },
     },
