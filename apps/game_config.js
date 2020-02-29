@@ -35,17 +35,21 @@ var game_config = {
     center_database: {
         host: HOST_IP,
         port: 3306,
-        database: "bycw_center",
+        // database: "bycw_center",
+        database: "5chess_center",
         user: "root",
-        password: "asd12345"
+        // password: "asd12345"
+        password: "ZAQ!xsw2"
     },
 
     game_database: {
         host: HOST_IP,
         port: 3306,
-        database: "bycw_game_node",
+        // database: "bycw_game_node",
+        database: "5chess_game",
         user: "root",
-        password: "asd12345"
+        // password: "asd12345"
+        password: "ZAQ!xsw2"
     },
 
     center_redis: {
